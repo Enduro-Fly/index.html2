@@ -1,67 +1,129 @@
-.table {
-    background-color: rgb(227, 197, 197);
-    width: 1300px;
-    height: 250px;
-    margin-top: 0px;
-    margin-left: 100px;
 
-}
-
-.table2 {
-    background-color: rgb(204, 204, 204);
-    width: 850px;
-    height: 400px;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-}
-
-.left,
-.right {
-    background-color: rgb(124, 165, 135);
-    width: fit-content;
-    padding: 20px;
+ .dir{
+    width: 100px;
+    height: 100px;
+   
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 100%;
     position: absolute;
+    top: 670px;
+    left: 100px;
 }
+ @keyframes dir{
+    0% {left: 0}
+    50% {left: 900px}
+    100%{left: 0} 
+ }
+.dir2{
+    width: 100px;
+    height: 100px;
+  
+    position: relative;
+    animation-name: dir2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 100%;
+    position: absolute;
+    top: 80%;
+    left: 8%;
+}
+ @keyframes dir2{
+    0% {left: 0}
+    50% {left: 900px}
+    100%{left: 0} 
+ }
+.кузов{
+    width: 500px;
+    height: 240px;
+   
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    border-radius: 10%;
+    border-top-left-radius: 100px;
+    animation-name: кузов;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes кузов{
+    0% {left: -900px}
+    100% {left: 2000px}
+   
+ }
+.фара{
+    
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 76%;
+    left: 36%;
+    animation-name: фара;
+    border-top-right-radius: 100px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes фара{
+    0% {left: 0}
+    50% {left: 900px}
+    100%{left: 0} 
+ }
+.img{
+    width: 100%;
+    height: 800px;
+}
+.общая{
+    background-color: antiquewhite;
+    width: 50%;
+    height: 50%;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 
-.left {
-    left: 0;
-    top: 44%;
-    border-radius: 10px;
-    background-color: rgb(124, 165, 135);
 }
-
-.right {
-    right: 0;
-    top: 44%;
-    border-radius: 10px;
-}
-
-img {
-    width: 300px;
-    height: 300px;
-    margin-top: 45px;
-    margin-left: 260px;
-}
-.text{
-    margin-top: 0px;
-    margin-left: 40%;
-}
-*{
-    box-sizing: border-box;
-}
-body{
-    margin: 0;
-    padding: 0;
-}
-/* .logo, .menu{
-    background-color: aliceblue;
-    height: 50px;
-    width: 200px;
-}
-.logo{
-    background-color: brown;
-}
-.menu{
-    background-color: blue;
-} */
+@keyframes общая{
+    0% {left: 0}
+    50% {left: 900px}
+    100%{left: 0} 
+ }
+ .amg{
+    
+ }
+ .kol{
+    width: 100px;
+    height: 100px;
+   animation-name: tyu;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 0.9s;
+    border-radius: 100%;
+    position: absolute;
+    top: 265px;
+    left: 190px;
+ }
+ @keyframes tyu{
+    0% {transform: rotate(0deg)}
+    100%{transform: rotate(360deg)} 
+ }
+ .koleso{
+    width: 100px;
+    height: 100px;
+   
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: kkk;
+    border-radius: 100%;
+    animation-duration: 0.9s;
+    position: absolute;
+    top: 265px;
+    left: 625px;
+ }
+ @keyframes kkk{
+    0% {transform: rotate(0deg)}
+    100%{transform: rotate(360deg)} 
